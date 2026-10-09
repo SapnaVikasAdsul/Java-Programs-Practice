@@ -1,0 +1,1 @@
+Stream pipeline usage practice
