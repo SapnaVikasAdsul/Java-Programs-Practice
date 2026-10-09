@@ -89,6 +89,18 @@ class Employee {
         Map<Boolean, List<Employee>> partition = employees.stream()
                 .collect(Collectors.partitioningBy(e -> e.getSalary() > 50000));
         System.out.println(partition);
+         
+        //Names from IT dept with salary>50000
+        List<String> namesFromIT = employees.stream()
+        .filter(e -> e.getDepartment().equals("IT")
+                && e.getSalary() > 50000)
+        .map(Employee::getName)
+        .toList();
+
+        //
+        boolean anyEmp = employees.stream()
+        .anyMatch(e -> e.getSalary() > 100000);
+
     }
       
 

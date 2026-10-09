@@ -70,6 +70,7 @@ class Employee {
         double totalSalary = employees.stream()
                 .mapToDouble(e -> e.getSalary())
                 .sum();
+
     }
 
 }
