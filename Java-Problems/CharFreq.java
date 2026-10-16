@@ -16,6 +16,8 @@ public class CharFreq {
             }
         }
 
+        
+
         System.out.println(count);
     }
 }
